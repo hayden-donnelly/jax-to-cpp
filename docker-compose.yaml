@@ -1,0 +1,18 @@
+services:
+  j2cpp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - rm:true
+    image: jax-to-cpp
+    container_name: jax-to-cpp
+    ports:
+      - 7070:8888
+    volumes:
+      - .:/project
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - capabilities: [gpu]
