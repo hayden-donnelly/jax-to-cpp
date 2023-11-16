@@ -1,6 +1,6 @@
 cc_binary(
-    name = "main",
-    srcs = ["src/main.cpp"],
+    name = "test",
+    srcs = ["src/test.cpp"],
     deps = [
         "@xla//xla:literal",
     ],
