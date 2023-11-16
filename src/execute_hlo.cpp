@@ -10,7 +10,7 @@
 int main(int argc, char** argv) 
 {
     // Load HloModule from file.
-    std::string hlo_filename = "../hlo_modules/hlo_comp.txt";
+    std::string hlo_filename = "hlo_modules/hlo_comp.txt";
     std::function<void(xla::HloModuleConfig*)> config_modifier_hook =
         [](xla::HloModuleConfig* config) { config->set_seed(42); };
     std::unique_ptr<xla::HloModule> test_module = 
