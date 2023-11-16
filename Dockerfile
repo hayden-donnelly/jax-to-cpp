@@ -14,7 +14,7 @@ RUN apt-get update -y \
     # Install Bazelisk.
     && wget https://github.com/bazelbuild/bazelisk/releases/download/v1.18.0/bazelisk-linux-amd64 \
     && chmod +x bazelisk-linux-amd64 \
-    && mv bazelisk-linux-amd64 /usr/local/bin/bazel
+    && mv bazelisk-linux-amd64 /usr/local/bin/bazel \
 
 ARG JAX_PACKAGE_URL="https://storage.googleapis.com/jax-releases/jax_cuda_releases.html"
 ARG NO_CACHE="--no-cache-dir"
@@ -23,7 +23,6 @@ RUN python3 -m pip install $NO_CACHE --upgrade pip \
         "jax[cuda11_cudnn86]" -f $JAX_PACKAGE_URL \
     && python3 -m pip install $NO_CACHE \
         jupyterlab==4.0.5
-
 
 WORKDIR project
 EXPOSE 7070
