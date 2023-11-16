@@ -11,7 +11,7 @@ services:
       - 7070:8888
     volumes:
       - .:/project
-      - ./bazel_cache:/root/.cache/bazel
+      - ./bazel-cache:/root/.cache/bazel
     deploy:
       resources:
         reservations:

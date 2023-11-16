@@ -3,4 +3,4 @@ bazel-bin
 bazel-out
 bazel-project
 bazel-testlogs
-bazel_cache
+bazel-cache
