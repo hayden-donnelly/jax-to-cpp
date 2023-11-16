@@ -1,0 +1,3 @@
+[submodule "xla"]
+	path = xla
+	url = https://github.com/openxla/xla.git
