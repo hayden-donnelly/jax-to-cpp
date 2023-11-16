@@ -28,6 +28,11 @@ Open a shell in the container:
 docker-compose exec j2cpp bash
 ```
 
+Generate a simple HLO module with JAX:
+```
+python3 scripts/generate_hlo.py
+```
+
 Build the ``execute_hlo`` target with Bazel (this might take a while at first, but the results will be cached for next time):
 ```
 bazel build //:execute_hlo
