@@ -1,3 +1,7 @@
+<div align="center">
+<img src="./images/jax_to_cpp_logo.png" alt="logo" width="500px"></img>
+</div>
+
 # jax-to-cpp
 Generate HLO with JAX then execute in C++.
 
