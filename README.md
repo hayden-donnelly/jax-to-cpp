@@ -1,7 +1,7 @@
 # jax-to-cpp
 Generate HLO with JAX then execute in C++.
 
-## Setup and Compilation
+## Getting Started
 
 Recursively clone this repository to get all the necessary files (including the [XLA submodule](https://github.com/openxla/xla/tree/dd7b496b6d082bfeda230332ea8e418e8cf3ca78)):
 ```
