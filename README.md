@@ -3,7 +3,7 @@
 </div>
 
 # jax-to-cpp
-Generate HLO with JAX then execute in C++. This removes the overhead of Python at runtime while maintaining its flexibility at design-time. Soon I'll add full training loops for ultrafast convergence.
+A demo showing how you can generate HLO with JAX then execute in C++. This removes the overhead of Python at runtime while maintaining its flexibility at design-time.
 
 ## Getting Started
 
